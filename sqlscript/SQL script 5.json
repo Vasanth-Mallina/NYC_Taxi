@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW Taxi_Zone AS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK 'https://jcsdlgen2.dfs.core.windows.net/refined/Taxi_Zone/',\n        FORMAT = 'DELTA'\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "NYC_Taxi",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"name": "PL_01",
+	"properties": {
+		"activities": [
+			{
+				"name": "NYC_Taxi",
+				"type": "SynapseNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebook": {
+						"referenceName": "NYC_Taxi",
+						"type": "NotebookReference"
+					},
+					"snapshot": true,
+					"executorSize": "Small",
+					"driverSize": "Small"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-02-23T06:14:13Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

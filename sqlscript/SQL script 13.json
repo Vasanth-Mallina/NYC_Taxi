@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 13",
+	"properties": {
+		"content": {
+			"query": "DROP VIEW IF EXISTS [dbo].[Date1];\nDROP VIEW IF EXISTS [dbo].[FHV_Taxi];\nDROP VIEW IF EXISTS [dbo].[FHVHV_Taxi];\nDROP VIEW IF EXISTS [dbo].[Yellow_Taxi];\nDROP VIEW IF EXISTS [dbo].[Green_Taxi];\nDROP VIEW IF EXISTS [dbo].[Payment];\nDROP VIEW IF EXISTS [dbo].[Taxi_Zone];\nDROP VIEW IF EXISTS [dbo].[RateCode];\nDROP VIEW IF EXISTS [dbo].[TPEP_Provider];\nDROP VIEW IF EXISTS [dbo].[Trip_Type];\nDROP VIEW IF EXISTS [dbo].[HVFHV_Provider];\nDROP VIEW IF EXISTS [dbo].[Shared_NotShared];",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "NYC_Taxi",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
